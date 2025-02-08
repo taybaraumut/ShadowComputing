@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,45 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{E1A64D17-489B-41C7-A1B9-A7460D83A8C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Notification.API", "src\Services\NotificationService\Modules\Layers\ShadowComputing.Notification.API\ShadowComputing.Notification.API.csproj", "{36890329-8446-4033-BF42-B0D4395B85D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Notification.BusinessLayer", "src\Services\NotificationService\Modules\Layers\ShadowComputing.Notification.BusinessLayer\ShadowComputing.Notification.BusinessLayer.csproj", "{B7E3A53B-C296-4E0B-BA92-177372305EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Notification.DataAccessLayer", "src\Services\NotificationService\Modules\Layers\ShadowComputing.Notification.DataAccessLayer\ShadowComputing.Notification.DataAccessLayer.csproj", "{80E7B331-823A-4FE1-A05D-4CB770BFEBDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Notification.DtoLayer", "src\Services\NotificationService\Modules\Layers\ShadowComputing.Notification.DtoLayer\ShadowComputing.Notification.DtoLayer.csproj", "{3513CC77-A200-4086-91BC-CAD656C1166D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Notification.EntityLayer", "src\Services\NotificationService\Modules\Layers\ShadowComputing.Notification.EntityLayer\ShadowComputing.Notification.EntityLayer.csproj", "{FC12E58D-C209-437F-90B5-FA46D9312F5F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36890329-8446-4033-BF42-B0D4395B85D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36890329-8446-4033-BF42-B0D4395B85D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36890329-8446-4033-BF42-B0D4395B85D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36890329-8446-4033-BF42-B0D4395B85D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E3A53B-C296-4E0B-BA92-177372305EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E3A53B-C296-4E0B-BA92-177372305EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E3A53B-C296-4E0B-BA92-177372305EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E3A53B-C296-4E0B-BA92-177372305EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E7B331-823A-4FE1-A05D-4CB770BFEBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E7B331-823A-4FE1-A05D-4CB770BFEBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E7B331-823A-4FE1-A05D-4CB770BFEBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E7B331-823A-4FE1-A05D-4CB770BFEBDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3513CC77-A200-4086-91BC-CAD656C1166D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3513CC77-A200-4086-91BC-CAD656C1166D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3513CC77-A200-4086-91BC-CAD656C1166D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3513CC77-A200-4086-91BC-CAD656C1166D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC12E58D-C209-437F-90B5-FA46D9312F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC12E58D-C209-437F-90B5-FA46D9312F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC12E58D-C209-437F-90B5-FA46D9312F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC12E58D-C209-437F-90B5-FA46D9312F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +122,11 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{E1A64D17-489B-41C7-A1B9-A7460D83A8C1} = {3CE62107-65C5-4DE4-A7BF-73D94FA28669}
+		{36890329-8446-4033-BF42-B0D4395B85D7} = {E1A64D17-489B-41C7-A1B9-A7460D83A8C1}
+		{B7E3A53B-C296-4E0B-BA92-177372305EB4} = {E1A64D17-489B-41C7-A1B9-A7460D83A8C1}
+		{80E7B331-823A-4FE1-A05D-4CB770BFEBDD} = {E1A64D17-489B-41C7-A1B9-A7460D83A8C1}
+		{3513CC77-A200-4086-91BC-CAD656C1166D} = {E1A64D17-489B-41C7-A1B9-A7460D83A8C1}
+		{FC12E58D-C209-437F-90B5-FA46D9312F5F} = {E1A64D17-489B-41C7-A1B9-A7460D83A8C1}
 	EndGlobalSection
 EndGlobal
