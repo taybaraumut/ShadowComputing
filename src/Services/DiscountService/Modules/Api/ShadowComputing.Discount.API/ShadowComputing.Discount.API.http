@@ -1,0 +1,6 @@
+@ShadowComputing.Discount.API_HostAddress = http://localhost:5202
+
+GET {{ShadowComputing.Discount.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
