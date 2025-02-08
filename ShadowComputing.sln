@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8B060595-6F45-48CE-8EC4-CF94909784AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{BEB890B1-3DFF-4121-A155-13FF38E91E6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{72F17B14-9E31-4C6A-84C6-F0C15098CF4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{F55A83C2-214C-46B3-B67D-65AB9A938605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Order.BenchmarkTest", "src\Services\OrderService\Modules\Tests\Benchmark\ShadowComputing.Order.BenchmarkTest\ShadowComputing.Order.BenchmarkTest.csproj", "{35C667A7-E1F4-40A1-A5B4-6332F0C63377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Order.IntegrationTest", "src\Services\OrderService\Modules\Tests\Integration\ShadowComputing.Order.IntegrationTest\ShadowComputing.Order.IntegrationTest.csproj", "{B0A5FA55-96AB-4E2E-A9E3-156BA556C07D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Order.UnitTest", "src\Services\OrderService\Modules\Tests\Unit\ShadowComputing.Order.UnitTest\ShadowComputing.Order.UnitTest.csproj", "{C00A7DD5-5A00-4287-A93A-A32ADE4597CC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C667A7-E1F4-40A1-A5B4-6332F0C63377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C667A7-E1F4-40A1-A5B4-6332F0C63377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C667A7-E1F4-40A1-A5B4-6332F0C63377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C667A7-E1F4-40A1-A5B4-6332F0C63377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A5FA55-96AB-4E2E-A9E3-156BA556C07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A5FA55-96AB-4E2E-A9E3-156BA556C07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A5FA55-96AB-4E2E-A9E3-156BA556C07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A5FA55-96AB-4E2E-A9E3-156BA556C07D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C00A7DD5-5A00-4287-A93A-A32ADE4597CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C00A7DD5-5A00-4287-A93A-A32ADE4597CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C00A7DD5-5A00-4287-A93A-A32ADE4597CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C00A7DD5-5A00-4287-A93A-A32ADE4597CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +116,12 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{8B060595-6F45-48CE-8EC4-CF94909784AB} = {378FAB16-2D42-483F-A271-4626693F54E4}
+		{BEB890B1-3DFF-4121-A155-13FF38E91E6F} = {8B060595-6F45-48CE-8EC4-CF94909784AB}
+		{72F17B14-9E31-4C6A-84C6-F0C15098CF4F} = {8B060595-6F45-48CE-8EC4-CF94909784AB}
+		{F55A83C2-214C-46B3-B67D-65AB9A938605} = {8B060595-6F45-48CE-8EC4-CF94909784AB}
+		{35C667A7-E1F4-40A1-A5B4-6332F0C63377} = {72F17B14-9E31-4C6A-84C6-F0C15098CF4F}
+		{B0A5FA55-96AB-4E2E-A9E3-156BA556C07D} = {F55A83C2-214C-46B3-B67D-65AB9A938605}
+		{C00A7DD5-5A00-4287-A93A-A32ADE4597CC} = {BEB890B1-3DFF-4121-A155-13FF38E91E6F}
 	EndGlobalSection
 EndGlobal
