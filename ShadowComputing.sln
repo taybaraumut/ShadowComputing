@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B86B8AD1-4293-4CC0-93FD-27A46196E108}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{F131C5E4-E8F2-4677-84B2-B793C81B1EAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{E42AF5E5-932A-4FE7-AD95-CFDB7E017692}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{27631AF9-62CE-4B6A-9394-E740EAC52776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Catalog.BenchmarkTest", "src\Services\CatalogService\Modules\Tests\Benchmark\ShadowComputing.Catalog.BenchmarkTest\ShadowComputing.Catalog.BenchmarkTest.csproj", "{0FCEA97E-F09C-412B-90E7-C1A575C6CF32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Catalog.IntegrationTest", "src\Services\CatalogService\Modules\Tests\Integration\ShadowComputing.Catalog.IntegrationTest\ShadowComputing.Catalog.IntegrationTest.csproj", "{A69C7F62-C7DC-42A4-A372-4A81D2649C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Catalog.UnitTest", "src\Services\CatalogService\Modules\Tests\Unit\ShadowComputing.Catalog.UnitTest\ShadowComputing.Catalog.UnitTest.csproj", "{618E0BDD-41EE-4224-9DE4-CC915721FB58}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FCEA97E-F09C-412B-90E7-C1A575C6CF32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FCEA97E-F09C-412B-90E7-C1A575C6CF32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FCEA97E-F09C-412B-90E7-C1A575C6CF32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FCEA97E-F09C-412B-90E7-C1A575C6CF32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A69C7F62-C7DC-42A4-A372-4A81D2649C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A69C7F62-C7DC-42A4-A372-4A81D2649C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A69C7F62-C7DC-42A4-A372-4A81D2649C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A69C7F62-C7DC-42A4-A372-4A81D2649C4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{618E0BDD-41EE-4224-9DE4-CC915721FB58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{618E0BDD-41EE-4224-9DE4-CC915721FB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{618E0BDD-41EE-4224-9DE4-CC915721FB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{618E0BDD-41EE-4224-9DE4-CC915721FB58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +116,12 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{B86B8AD1-4293-4CC0-93FD-27A46196E108} = {391225D1-D5A2-468E-B115-3502F6A33442}
+		{F131C5E4-E8F2-4677-84B2-B793C81B1EAA} = {B86B8AD1-4293-4CC0-93FD-27A46196E108}
+		{E42AF5E5-932A-4FE7-AD95-CFDB7E017692} = {B86B8AD1-4293-4CC0-93FD-27A46196E108}
+		{27631AF9-62CE-4B6A-9394-E740EAC52776} = {B86B8AD1-4293-4CC0-93FD-27A46196E108}
+		{0FCEA97E-F09C-412B-90E7-C1A575C6CF32} = {27631AF9-62CE-4B6A-9394-E740EAC52776}
+		{A69C7F62-C7DC-42A4-A372-4A81D2649C4C} = {E42AF5E5-932A-4FE7-AD95-CFDB7E017692}
+		{618E0BDD-41EE-4224-9DE4-CC915721FB58} = {F131C5E4-E8F2-4677-84B2-B793C81B1EAA}
 	EndGlobalSection
 EndGlobal
