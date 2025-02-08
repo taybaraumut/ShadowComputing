@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,45 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{DD2989BB-0CDA-431C-B9F8-975894012ABF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D6AF65DC-B453-4365-A661-B46408635850}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{BC302E48-AE24-400F-A605-B55572523F92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9A079546-58D4-4489-B928-1BBF1E8E565A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Order.PersistenceLayer", "src\Services\OrderService\Modules\Layers\Infrastructure\ShadowComputing.Order.PersistenceLayer\ShadowComputing.Order.PersistenceLayer.csproj", "{7C3FF216-A7E9-4760-BA43-F742DBAE3537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Order.API", "src\Services\OrderService\Modules\Layers\Presentation\ShadowComputing.Order.API\ShadowComputing.Order.API.csproj", "{53B0C15B-5D68-4498-B05A-F61AFE7941F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Order.ApplicationLayer", "src\Services\OrderService\Modules\Layers\Core\ShadowComputing.Order.ApplicationLayer\ShadowComputing.Order.ApplicationLayer.csproj", "{FFC88838-14CA-4FD3-9BD0-FB87EA19187F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Order.DomainLayer", "src\Services\OrderService\Modules\Layers\Core\ShadowComputing.Order.DomainLayer\ShadowComputing.Order.DomainLayer.csproj", "{FDC9E848-F835-4A49-9EB6-AE1F7B0292E9}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C3FF216-A7E9-4760-BA43-F742DBAE3537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3FF216-A7E9-4760-BA43-F742DBAE3537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3FF216-A7E9-4760-BA43-F742DBAE3537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3FF216-A7E9-4760-BA43-F742DBAE3537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B0C15B-5D68-4498-B05A-F61AFE7941F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B0C15B-5D68-4498-B05A-F61AFE7941F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B0C15B-5D68-4498-B05A-F61AFE7941F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B0C15B-5D68-4498-B05A-F61AFE7941F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC88838-14CA-4FD3-9BD0-FB87EA19187F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC88838-14CA-4FD3-9BD0-FB87EA19187F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC88838-14CA-4FD3-9BD0-FB87EA19187F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC88838-14CA-4FD3-9BD0-FB87EA19187F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC9E848-F835-4A49-9EB6-AE1F7B0292E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC9E848-F835-4A49-9EB6-AE1F7B0292E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC9E848-F835-4A49-9EB6-AE1F7B0292E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC9E848-F835-4A49-9EB6-AE1F7B0292E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +122,13 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{DD2989BB-0CDA-431C-B9F8-975894012ABF} = {378FAB16-2D42-483F-A271-4626693F54E4}
+		{D6AF65DC-B453-4365-A661-B46408635850} = {DD2989BB-0CDA-431C-B9F8-975894012ABF}
+		{BC302E48-AE24-400F-A605-B55572523F92} = {DD2989BB-0CDA-431C-B9F8-975894012ABF}
+		{9A079546-58D4-4489-B928-1BBF1E8E565A} = {DD2989BB-0CDA-431C-B9F8-975894012ABF}
+		{7C3FF216-A7E9-4760-BA43-F742DBAE3537} = {9A079546-58D4-4489-B928-1BBF1E8E565A}
+		{53B0C15B-5D68-4498-B05A-F61AFE7941F6} = {BC302E48-AE24-400F-A605-B55572523F92}
+		{FFC88838-14CA-4FD3-9BD0-FB87EA19187F} = {D6AF65DC-B453-4365-A661-B46408635850}
+		{FDC9E848-F835-4A49-9EB6-AE1F7B0292E9} = {D6AF65DC-B453-4365-A661-B46408635850}
 	EndGlobalSection
 EndGlobal
