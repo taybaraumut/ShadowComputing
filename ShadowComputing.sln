@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{139B35E2-A676-4A88-9CF2-800884040C8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{46217DCA-F266-4E74-AE0F-792A314E4B2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{30690016-EFE4-46F5-A95E-367FC6BE269D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{B87EF090-0309-4C3D-BB93-AF72DF4EF62F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Notification.BenchmarkTest", "src\Services\NotificationService\Modules\Tests\Benchmark\ShadowComputing.Notification.BenchmarkTest\ShadowComputing.Notification.BenchmarkTest.csproj", "{7F0FEB87-387C-439F-9A0A-9E55F52D1079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Notification.IntegrationTest", "src\Services\NotificationService\Modules\Tests\Integration\ShadowComputing.Notification.IntegrationTest\ShadowComputing.Notification.IntegrationTest.csproj", "{C7ACB615-54E2-4379-9C7C-52AF67428964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Notification.UnitTest", "src\Services\NotificationService\Modules\Tests\Unit\ShadowComputing.Notification.UnitTest\ShadowComputing.Notification.UnitTest.csproj", "{A5147A96-52A7-4DFC-8B8F-6B4EFF176195}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F0FEB87-387C-439F-9A0A-9E55F52D1079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0FEB87-387C-439F-9A0A-9E55F52D1079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0FEB87-387C-439F-9A0A-9E55F52D1079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0FEB87-387C-439F-9A0A-9E55F52D1079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7ACB615-54E2-4379-9C7C-52AF67428964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7ACB615-54E2-4379-9C7C-52AF67428964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7ACB615-54E2-4379-9C7C-52AF67428964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7ACB615-54E2-4379-9C7C-52AF67428964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5147A96-52A7-4DFC-8B8F-6B4EFF176195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5147A96-52A7-4DFC-8B8F-6B4EFF176195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5147A96-52A7-4DFC-8B8F-6B4EFF176195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5147A96-52A7-4DFC-8B8F-6B4EFF176195}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +116,12 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{139B35E2-A676-4A88-9CF2-800884040C8B} = {3CE62107-65C5-4DE4-A7BF-73D94FA28669}
+		{46217DCA-F266-4E74-AE0F-792A314E4B2D} = {139B35E2-A676-4A88-9CF2-800884040C8B}
+		{30690016-EFE4-46F5-A95E-367FC6BE269D} = {139B35E2-A676-4A88-9CF2-800884040C8B}
+		{B87EF090-0309-4C3D-BB93-AF72DF4EF62F} = {139B35E2-A676-4A88-9CF2-800884040C8B}
+		{7F0FEB87-387C-439F-9A0A-9E55F52D1079} = {30690016-EFE4-46F5-A95E-367FC6BE269D}
+		{C7ACB615-54E2-4379-9C7C-52AF67428964} = {B87EF090-0309-4C3D-BB93-AF72DF4EF62F}
+		{A5147A96-52A7-4DFC-8B8F-6B4EFF176195} = {46217DCA-F266-4E74-AE0F-792A314E4B2D}
 	EndGlobalSection
 EndGlobal
