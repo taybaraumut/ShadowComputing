@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,45 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{2E93A8E6-16DF-4E5C-9630-E4FA14160F9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Cargo.API", "src\Services\CargoService\Modules\Layers\ShadowComputing.Cargo.API\ShadowComputing.Cargo.API.csproj", "{58D353C6-346A-4D7C-A4E1-0BCACAF12B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Cargo.BusinessLayer", "src\Services\CargoService\Modules\Layers\ShadowComputing.Cargo.BusinessLayer\ShadowComputing.Cargo.BusinessLayer.csproj", "{C61E8544-5424-471D-96AA-FC6384923241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Cargo.DataAccessLayer", "src\Services\CargoService\Modules\Layers\ShadowComputing.Cargo.DataAccessLayer\ShadowComputing.Cargo.DataAccessLayer.csproj", "{208A5DC7-9C37-4F87-97F8-0316AD7BD7D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Cargo.DtoLayer", "src\Services\CargoService\Modules\Layers\ShadowComputing.Cargo.DtoLayer\ShadowComputing.Cargo.DtoLayer.csproj", "{3CC7F128-4B1A-48F3-80B9-440B2887FD9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Cargo.EntityLayer", "src\Services\CargoService\Modules\Layers\ShadowComputing.Cargo.EntityLayer\ShadowComputing.Cargo.EntityLayer.csproj", "{370614B5-A576-4AC8-B22D-FA3D2C23F95B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58D353C6-346A-4D7C-A4E1-0BCACAF12B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D353C6-346A-4D7C-A4E1-0BCACAF12B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D353C6-346A-4D7C-A4E1-0BCACAF12B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D353C6-346A-4D7C-A4E1-0BCACAF12B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61E8544-5424-471D-96AA-FC6384923241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61E8544-5424-471D-96AA-FC6384923241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61E8544-5424-471D-96AA-FC6384923241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61E8544-5424-471D-96AA-FC6384923241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{208A5DC7-9C37-4F87-97F8-0316AD7BD7D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{208A5DC7-9C37-4F87-97F8-0316AD7BD7D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{208A5DC7-9C37-4F87-97F8-0316AD7BD7D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{208A5DC7-9C37-4F87-97F8-0316AD7BD7D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CC7F128-4B1A-48F3-80B9-440B2887FD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CC7F128-4B1A-48F3-80B9-440B2887FD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CC7F128-4B1A-48F3-80B9-440B2887FD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CC7F128-4B1A-48F3-80B9-440B2887FD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{370614B5-A576-4AC8-B22D-FA3D2C23F95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370614B5-A576-4AC8-B22D-FA3D2C23F95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370614B5-A576-4AC8-B22D-FA3D2C23F95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370614B5-A576-4AC8-B22D-FA3D2C23F95B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +122,11 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{2E93A8E6-16DF-4E5C-9630-E4FA14160F9F} = {4EBEEA21-C193-4EAE-BDE8-43756195AB35}
+		{58D353C6-346A-4D7C-A4E1-0BCACAF12B1C} = {2E93A8E6-16DF-4E5C-9630-E4FA14160F9F}
+		{C61E8544-5424-471D-96AA-FC6384923241} = {2E93A8E6-16DF-4E5C-9630-E4FA14160F9F}
+		{208A5DC7-9C37-4F87-97F8-0316AD7BD7D3} = {2E93A8E6-16DF-4E5C-9630-E4FA14160F9F}
+		{3CC7F128-4B1A-48F3-80B9-440B2887FD9D} = {2E93A8E6-16DF-4E5C-9630-E4FA14160F9F}
+		{370614B5-A576-4AC8-B22D-FA3D2C23F95B} = {2E93A8E6-16DF-4E5C-9630-E4FA14160F9F}
 	EndGlobalSection
 EndGlobal
