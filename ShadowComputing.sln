@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{37BCA07D-D7F1-47C0-A667-6841A6EDF988}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{65A53D74-50A5-45CC-AC78-3F174AEB23C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{E4D02692-01F3-42B3-95BE-6F98FD781BDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{DF342640-FDE0-435E-9413-30BB9AC0DDBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Search.BenchmarkTest", "src\Services\SearchService\Modules\Tests\Benchmark\ShadowComputing.Search.BenchmarkTest\ShadowComputing.Search.BenchmarkTest.csproj", "{A61D8426-2FBC-4797-BB1D-EDE3C83EF970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Search.IntegrationTest", "src\Services\SearchService\Modules\Tests\Integration\ShadowComputing.Search.IntegrationTest\ShadowComputing.Search.IntegrationTest.csproj", "{8FF709CB-3EA9-483C-9217-37047006DCAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Search.UnitTest", "src\Services\SearchService\Modules\Tests\Unit\ShadowComputing.Search.UnitTest\ShadowComputing.Search.UnitTest.csproj", "{89CA934B-614D-4AA1-B819-95162A5CC892}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A61D8426-2FBC-4797-BB1D-EDE3C83EF970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61D8426-2FBC-4797-BB1D-EDE3C83EF970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61D8426-2FBC-4797-BB1D-EDE3C83EF970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61D8426-2FBC-4797-BB1D-EDE3C83EF970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF709CB-3EA9-483C-9217-37047006DCAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF709CB-3EA9-483C-9217-37047006DCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF709CB-3EA9-483C-9217-37047006DCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF709CB-3EA9-483C-9217-37047006DCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89CA934B-614D-4AA1-B819-95162A5CC892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89CA934B-614D-4AA1-B819-95162A5CC892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89CA934B-614D-4AA1-B819-95162A5CC892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89CA934B-614D-4AA1-B819-95162A5CC892}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +116,12 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{37BCA07D-D7F1-47C0-A667-6841A6EDF988} = {F4DB4AB5-8585-48D6-834E-7E5134A0C7A7}
+		{65A53D74-50A5-45CC-AC78-3F174AEB23C7} = {37BCA07D-D7F1-47C0-A667-6841A6EDF988}
+		{E4D02692-01F3-42B3-95BE-6F98FD781BDD} = {37BCA07D-D7F1-47C0-A667-6841A6EDF988}
+		{DF342640-FDE0-435E-9413-30BB9AC0DDBE} = {37BCA07D-D7F1-47C0-A667-6841A6EDF988}
+		{A61D8426-2FBC-4797-BB1D-EDE3C83EF970} = {E4D02692-01F3-42B3-95BE-6F98FD781BDD}
+		{8FF709CB-3EA9-483C-9217-37047006DCAA} = {DF342640-FDE0-435E-9413-30BB9AC0DDBE}
+		{89CA934B-614D-4AA1-B819-95162A5CC892} = {65A53D74-50A5-45CC-AC78-3F174AEB23C7}
 	EndGlobalSection
 EndGlobal
