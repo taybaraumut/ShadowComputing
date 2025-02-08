@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7FE00424-B249-46D0-909D-F2B73B4EC0D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{159535A4-138D-4767-AF47-FE374A5FB101}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{92FCF4AF-7CD7-40C9-B590-2DE9FA90E561}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{86779F8E-6CEF-4670-89F1-34173083D77A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.BenchmarkTest", "src\Services\AppointmentService\Modules\Tests\Benchmark\ShadowComputing.Appointment.BenchmarkTest\ShadowComputing.Appointment.BenchmarkTest.csproj", "{A03476F6-BAD8-4C61-91BA-31DD66440057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.IntegrationTest", "src\Services\AppointmentService\Modules\Tests\Integration\ShadowComputing.Appointment.IntegrationTest\ShadowComputing.Appointment.IntegrationTest.csproj", "{0C3DB47F-7154-460D-9605-25EF8EC5A191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.UnitTest", "src\Services\AppointmentService\Modules\Tests\Unit\ShadowComputing.Appointment.UnitTest\ShadowComputing.Appointment.UnitTest.csproj", "{88F0BF63-D5BD-4533-BE49-28F688EBC6EF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A03476F6-BAD8-4C61-91BA-31DD66440057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03476F6-BAD8-4C61-91BA-31DD66440057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03476F6-BAD8-4C61-91BA-31DD66440057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03476F6-BAD8-4C61-91BA-31DD66440057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C3DB47F-7154-460D-9605-25EF8EC5A191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3DB47F-7154-460D-9605-25EF8EC5A191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3DB47F-7154-460D-9605-25EF8EC5A191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3DB47F-7154-460D-9605-25EF8EC5A191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F0BF63-D5BD-4533-BE49-28F688EBC6EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F0BF63-D5BD-4533-BE49-28F688EBC6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F0BF63-D5BD-4533-BE49-28F688EBC6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F0BF63-D5BD-4533-BE49-28F688EBC6EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +116,12 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{7FE00424-B249-46D0-909D-F2B73B4EC0D5} = {DA802031-C75E-4266-B3A4-EAE729B1A929}
+		{159535A4-138D-4767-AF47-FE374A5FB101} = {7FE00424-B249-46D0-909D-F2B73B4EC0D5}
+		{92FCF4AF-7CD7-40C9-B590-2DE9FA90E561} = {7FE00424-B249-46D0-909D-F2B73B4EC0D5}
+		{86779F8E-6CEF-4670-89F1-34173083D77A} = {7FE00424-B249-46D0-909D-F2B73B4EC0D5}
+		{A03476F6-BAD8-4C61-91BA-31DD66440057} = {92FCF4AF-7CD7-40C9-B590-2DE9FA90E561}
+		{0C3DB47F-7154-460D-9605-25EF8EC5A191} = {86779F8E-6CEF-4670-89F1-34173083D77A}
+		{88F0BF63-D5BD-4533-BE49-28F688EBC6EF} = {159535A4-138D-4767-AF47-FE374A5FB101}
 	EndGlobalSection
 EndGlobal
