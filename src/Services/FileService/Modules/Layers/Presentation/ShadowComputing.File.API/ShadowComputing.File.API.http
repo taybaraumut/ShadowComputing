@@ -1,0 +1,6 @@
+@ShadowComputing.File.API_HostAddress = http://localhost:5126
+
+GET {{ShadowComputing.File.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
