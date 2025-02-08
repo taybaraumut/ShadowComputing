@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,45 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{183CC737-B598-42BB-9E7C-D1DC3F924E34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.BusinessLayer", "src\Services\AppointmentService\Modules\Layers\ShadowComputing.Appointment.BusinessLayer\ShadowComputing.Appointment.BusinessLayer.csproj", "{014BB3EA-9A2A-431E-89F4-460E8021B14D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.DataAccessLayer", "src\Services\AppointmentService\Modules\Layers\ShadowComputing.Appointment.DataAccessLayer\ShadowComputing.Appointment.DataAccessLayer.csproj", "{2F434A15-8984-4191-919C-D1B60CA44903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.DtoLayer", "src\Services\AppointmentService\Modules\Layers\ShadowComputing.Appointment.DtoLayer\ShadowComputing.Appointment.DtoLayer.csproj", "{11E0EFF1-7C00-4BA7-B358-0B636C6ADF9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.EntityLayer", "src\Services\AppointmentService\Modules\Layers\ShadowComputing.Appointment.EntityLayer\ShadowComputing.Appointment.EntityLayer.csproj", "{6C311669-0B12-497E-BBCC-602535BE0310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.gRPC", "src\Services\AppointmentService\Modules\Layers\ShadowComputing.Appointment.gRPC\ShadowComputing.Appointment.gRPC.csproj", "{7ECCBF3D-A988-4E81-8C4A-545D8D01E4BF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{014BB3EA-9A2A-431E-89F4-460E8021B14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014BB3EA-9A2A-431E-89F4-460E8021B14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014BB3EA-9A2A-431E-89F4-460E8021B14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014BB3EA-9A2A-431E-89F4-460E8021B14D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F434A15-8984-4191-919C-D1B60CA44903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F434A15-8984-4191-919C-D1B60CA44903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F434A15-8984-4191-919C-D1B60CA44903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F434A15-8984-4191-919C-D1B60CA44903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E0EFF1-7C00-4BA7-B358-0B636C6ADF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E0EFF1-7C00-4BA7-B358-0B636C6ADF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E0EFF1-7C00-4BA7-B358-0B636C6ADF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E0EFF1-7C00-4BA7-B358-0B636C6ADF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C311669-0B12-497E-BBCC-602535BE0310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C311669-0B12-497E-BBCC-602535BE0310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C311669-0B12-497E-BBCC-602535BE0310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C311669-0B12-497E-BBCC-602535BE0310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ECCBF3D-A988-4E81-8C4A-545D8D01E4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ECCBF3D-A988-4E81-8C4A-545D8D01E4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ECCBF3D-A988-4E81-8C4A-545D8D01E4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ECCBF3D-A988-4E81-8C4A-545D8D01E4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +122,11 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{183CC737-B598-42BB-9E7C-D1DC3F924E34} = {DA802031-C75E-4266-B3A4-EAE729B1A929}
+		{014BB3EA-9A2A-431E-89F4-460E8021B14D} = {183CC737-B598-42BB-9E7C-D1DC3F924E34}
+		{2F434A15-8984-4191-919C-D1B60CA44903} = {183CC737-B598-42BB-9E7C-D1DC3F924E34}
+		{11E0EFF1-7C00-4BA7-B358-0B636C6ADF9F} = {183CC737-B598-42BB-9E7C-D1DC3F924E34}
+		{6C311669-0B12-497E-BBCC-602535BE0310} = {183CC737-B598-42BB-9E7C-D1DC3F924E34}
+		{7ECCBF3D-A988-4E81-8C4A-545D8D01E4BF} = {183CC737-B598-42BB-9E7C-D1DC3F924E34}
 	EndGlobalSection
 EndGlobal
