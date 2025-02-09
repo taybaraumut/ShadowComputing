@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventBus", "EventBus", "{C646D43E-8B67-4A98-B1FA-42C0580560A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.EventBus.Base", "src\BuildingBlocks\EventBus\ShadowComputing.EventBus.Base\ShadowComputing.EventBus.Base.csproj", "{E2B0DF59-924A-4F9A-AC0E-86AA5E93637A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.EventBus.RabbitMQ", "src\BuildingBlocks\EventBus\ShadowComputing.EventBus.RabbitMQ\ShadowComputing.EventBus.RabbitMQ.csproj", "{D4D83D6E-4C0E-4EE8-B216-54C32CE5D62C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.EventBus.Factory", "src\BuildingBlocks\EventBus\ShadowComputing.EventBus.Factory\ShadowComputing.EventBus.Factory.csproj", "{4FC6AC8E-7418-4F33-A0E5-D2C881767B97}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2B0DF59-924A-4F9A-AC0E-86AA5E93637A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B0DF59-924A-4F9A-AC0E-86AA5E93637A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B0DF59-924A-4F9A-AC0E-86AA5E93637A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B0DF59-924A-4F9A-AC0E-86AA5E93637A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D83D6E-4C0E-4EE8-B216-54C32CE5D62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D83D6E-4C0E-4EE8-B216-54C32CE5D62C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D83D6E-4C0E-4EE8-B216-54C32CE5D62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D83D6E-4C0E-4EE8-B216-54C32CE5D62C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC6AC8E-7418-4F33-A0E5-D2C881767B97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC6AC8E-7418-4F33-A0E5-D2C881767B97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC6AC8E-7418-4F33-A0E5-D2C881767B97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC6AC8E-7418-4F33-A0E5-D2C881767B97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +110,9 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{C646D43E-8B67-4A98-B1FA-42C0580560A6} = {DB97F464-5CFB-4F7F-A659-7FB09ADB41D6}
+		{E2B0DF59-924A-4F9A-AC0E-86AA5E93637A} = {C646D43E-8B67-4A98-B1FA-42C0580560A6}
+		{D4D83D6E-4C0E-4EE8-B216-54C32CE5D62C} = {C646D43E-8B67-4A98-B1FA-42C0580560A6}
+		{4FC6AC8E-7418-4F33-A0E5-D2C881767B97} = {C646D43E-8B67-4A98-B1FA-42C0580560A6}
 	EndGlobalSection
 EndGlobal
