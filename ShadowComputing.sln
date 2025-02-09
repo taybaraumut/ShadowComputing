@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}"
 EndProject
@@ -55,7 +55,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EC412DC1-ECB9-4588-B1D8-D956FEC24E76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{E9B914D2-CBCC-4500-911E-DE609833302D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{B0B69BD3-4380-4BEA-B8BF-8366BC89FCEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{9E4E1880-6762-4942-90BC-FAD4882ED134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Payment.IntegrationTest", "src\Services\PaymentService\Modules\Tests\Integration\ShadowComputing.Payment.IntegrationTest\ShadowComputing.Payment.IntegrationTest.csproj", "{62AD92F5-261B-4C2B-A1F1-10161F82F7EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Payment.UnitTest", "src\Services\PaymentService\Modules\Tests\Unit\ShadowComputing.Payment.UnitTest\ShadowComputing.Payment.UnitTest.csproj", "{13CE7DE1-7CD9-491F-BFE1-4CF6110BD7B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Payment.BenchmarkTest", "src\Services\PaymentService\Modules\Tests\Benchmark\ShadowComputing.Payment.BenchmarkTest\ShadowComputing.Payment.BenchmarkTest.csproj", "{6946E7ED-B9EC-4FD7-8301-9ABD4541A989}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62AD92F5-261B-4C2B-A1F1-10161F82F7EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62AD92F5-261B-4C2B-A1F1-10161F82F7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62AD92F5-261B-4C2B-A1F1-10161F82F7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62AD92F5-261B-4C2B-A1F1-10161F82F7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13CE7DE1-7CD9-491F-BFE1-4CF6110BD7B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13CE7DE1-7CD9-491F-BFE1-4CF6110BD7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13CE7DE1-7CD9-491F-BFE1-4CF6110BD7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13CE7DE1-7CD9-491F-BFE1-4CF6110BD7B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6946E7ED-B9EC-4FD7-8301-9ABD4541A989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6946E7ED-B9EC-4FD7-8301-9ABD4541A989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6946E7ED-B9EC-4FD7-8301-9ABD4541A989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6946E7ED-B9EC-4FD7-8301-9ABD4541A989}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -84,5 +116,12 @@ Global
 		{7F13DF5F-C5EC-499F-9C53-3DF4187A559B} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{DB97F464-5CFB-4F7F-A659-7FB09ADB41D6} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
 		{E28FC8D8-DE44-420E-B8F5-E09EE8384CAA} = {A0F5752B-D9EA-4227-9E7F-550C9AE11D1A}
+		{EC412DC1-ECB9-4588-B1D8-D956FEC24E76} = {2CAB3399-81DC-4BAB-8FB9-9571D10A765C}
+		{E9B914D2-CBCC-4500-911E-DE609833302D} = {EC412DC1-ECB9-4588-B1D8-D956FEC24E76}
+		{B0B69BD3-4380-4BEA-B8BF-8366BC89FCEA} = {EC412DC1-ECB9-4588-B1D8-D956FEC24E76}
+		{9E4E1880-6762-4942-90BC-FAD4882ED134} = {EC412DC1-ECB9-4588-B1D8-D956FEC24E76}
+		{62AD92F5-261B-4C2B-A1F1-10161F82F7EE} = {9E4E1880-6762-4942-90BC-FAD4882ED134}
+		{13CE7DE1-7CD9-491F-BFE1-4CF6110BD7B2} = {E9B914D2-CBCC-4500-911E-DE609833302D}
+		{6946E7ED-B9EC-4FD7-8301-9ABD4541A989} = {B0B69BD3-4380-4BEA-B8BF-8366BC89FCEA}
 	EndGlobalSection
 EndGlobal
