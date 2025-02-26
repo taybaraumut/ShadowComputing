@@ -20,5 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\ShadowComputing.Catalog.ApplicationLayer\ShadowComputing.Catalog.ApplicationLayer.csproj" />
+    <ProjectReference Include="..\..\Core\ShadowComputing.Catalog.DomainLayer\ShadowComputing.Catalog.DomainLayer.csproj" />
   </ItemGroup>
 </Project>
