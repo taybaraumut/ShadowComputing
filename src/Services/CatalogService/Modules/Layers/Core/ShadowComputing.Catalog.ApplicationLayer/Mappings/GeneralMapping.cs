@@ -8,6 +8,24 @@ using ShadowComputing.Catalog.ApplicationLayer.Dtos.ProductDtos;
 using ShadowComputing.Catalog.ApplicationLayer.Dtos.ProductImageDtos;
 using ShadowComputing.Catalog.ApplicationLayer.Dtos.ProductSpecificationDtos;
 using ShadowComputing.Catalog.ApplicationLayer.Dtos.ProductStandardDescriptionDtos;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductAdvancedDescriptions.Create;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductAdvancedDescriptions.Update;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductBasicDescriptions.Create;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductBasicDescriptions.Update;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductBrands.Create;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductBrands.Update;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductComments.Create;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductComments.Update;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductDetails.Create;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductDetails.Update;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductImages.Create;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductImages.Update;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.Products.Create;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.Products.Update;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductSpecifications.Create;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductSpecifications.Update;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductStandardDescriptions.Create;
+using ShadowComputing.Catalog.ApplicationLayer.Features.Mediator.Commands.ProductStandardDescriptions.Update;
 using ShadowComputing.Catalog.DomainLayer.Entities;
 
 namespace ShadowComputing.Catalog.ApplicationLayer.Mapping
@@ -16,48 +34,48 @@ namespace ShadowComputing.Catalog.ApplicationLayer.Mapping
     {
         public GeneralMapping()
         {
-            CreateMap<CreateProductAdvancedDescriptionDto, ProductAdvancedDescription>().ReverseMap();
-            CreateMap<UpdateProductAdvancedDescriptionDto, ProductAdvancedDescription>().ReverseMap();
+            CreateMap<CreateProductAdvancedDescriptionCommand, ProductAdvancedDescription>().ReverseMap();
+            CreateMap<UpdateProductAdvancedDescriptionCommand, ProductAdvancedDescription>().ReverseMap();
             CreateMap<GetProductAdvancedDescriptionDto, ProductAdvancedDescription>().ReverseMap();         
             CreateMap<GetProductAdvancedDescriptionListDto, ProductAdvancedDescription>().ReverseMap();
 
-            CreateMap<CreateProductBasicDescriptionDto, ProductBasicDescription>().ReverseMap();
-            CreateMap<UpdateProductBasicDescriptionDto, ProductBasicDescription>().ReverseMap();
+            CreateMap<CreateProductBasicDescriptionCommand, ProductBasicDescription>().ReverseMap();
+            CreateMap<UpdateProductBasicDescriptionCommand, ProductBasicDescription>().ReverseMap();
             CreateMap<GetProductBasicDescriptionDto, ProductBasicDescription>().ReverseMap();
             CreateMap<GetProductBasicDescriptionListDto, ProductBasicDescription>().ReverseMap();
 
-            CreateMap<CreateProductBrandDto, ProductBrand>().ReverseMap();
-            CreateMap<UpdateProductBrandDto, ProductBrand>().ReverseMap();
+            CreateMap<CreateProductBrandCommand, ProductBrand>().ReverseMap();
+            CreateMap<UpdateProductBrandCommand, ProductBrand>().ReverseMap();
             CreateMap<GetProductBrandDto, ProductBrand>().ReverseMap();
             CreateMap<GetProductBrandListDto, ProductBrand>().ReverseMap();
 
-            CreateMap<CreateProductCommentDto, ProductComment>().ReverseMap();
-            CreateMap<UpdateProductCommentDto, ProductComment>().ReverseMap();
+            CreateMap<CreateProductCommentCommand, ProductComment>().ReverseMap();
+            CreateMap<UpdateProductCommentCommand, ProductComment>().ReverseMap();
             CreateMap<GetProductCommentDto, ProductComment>().ReverseMap();
             CreateMap<GetProductCommentListDto, ProductComment>().ReverseMap();
 
-            CreateMap<CreateProductDetailDto, ProductDetail>().ReverseMap();
-            CreateMap<UpdateProductDetailDto, ProductDetail>().ReverseMap();
+            CreateMap<CreateProductDetailCommand, ProductDetail>().ReverseMap();
+            CreateMap<UpdateProductDetailCommand, ProductDetail>().ReverseMap();
             CreateMap<GetProductDetailDto, ProductDetail>().ReverseMap();
             CreateMap<GetProductDetailListDto, ProductDetail>().ReverseMap();
 
-            CreateMap<CreateProductDto, Product>().ReverseMap();
-            CreateMap<UpdateProductDto, Product>().ReverseMap();
+            CreateMap<CreateProductCommand, Product>().ReverseMap();
+            CreateMap<UpdateProductCommand, Product>().ReverseMap();
             CreateMap<GetProductDto, Product>().ReverseMap();
             CreateMap<GetProductListDto, Product>().ReverseMap();
 
-            CreateMap<CreateProductImageDto, ProductImage>().ReverseMap();
-            CreateMap<UpdateProductImageDto, ProductImage>().ReverseMap();
+            CreateMap<CreateProductImageCommand, ProductImage>().ReverseMap();
+            CreateMap<UpdateProductImageCommand, ProductImage>().ReverseMap();
             CreateMap<GetProductImageDto, ProductImage>().ReverseMap();
             CreateMap<GetProductImageListDto, ProductImage>().ReverseMap();
 
-            CreateMap<CreateProductSpecificationDto, ProductSpecification>().ReverseMap();
-            CreateMap<UpdateProductSpecificationDto, ProductSpecification>().ReverseMap();
+            CreateMap<CreateProductSpecificationCommand, ProductSpecification>().ReverseMap();
+            CreateMap<UpdateProductSpecificationCommand, ProductSpecification>().ReverseMap();
             CreateMap<GetProductSpecificationDto, ProductSpecification>().ReverseMap();
             CreateMap<GetProductSpecificationListDto, ProductSpecification>().ReverseMap();
 
-            CreateMap<CreateProductStandardDescriptionDto, ProductStandardDescription>().ReverseMap();
-            CreateMap<UpdateProductStandardDescriptionDto, ProductStandardDescription>().ReverseMap();
+            CreateMap<CreateProductStandardDescriptionCommand, ProductStandardDescription>().ReverseMap();
+            CreateMap<UpdateProductStandardDescriptionCommand, ProductStandardDescription>().ReverseMap();
             CreateMap<GetProductStandardDescriptionDto, ProductStandardDescription>().ReverseMap();
             CreateMap<GetProductStandardDescriptionListDto, ProductStandardDescription>().ReverseMap();
         }
