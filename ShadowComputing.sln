@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B2E7CBEF-E0DF-468A-AAA1-E51A815AF284}"
 EndProject
@@ -15,7 +15,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{2FAF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{A1789CBE-8F81-4570-BAB5-75A1AEDB2305}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MobileApiGateway", "MobileApiGateway", "{EFEFB91E-825B-4BDA-B4D5-C1B709D6447C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApiGateway", "WebApiGateway", "{BC7AE62A-8397-4EE1-90AE-011070FCB251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Mobile.ApiGateway", "src\ApiGateways\MobileApiGateway\ShadowComputing.Mobile.ApiGateway\ShadowComputing.Mobile.ApiGateway.csproj", "{ABDEDE24-098D-46B9-BF7B-0E92174B6B8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Web.ApiGateway", "src\ApiGateways\WebApiGateway\ShadowComputing.Web.ApiGateway\ShadowComputing.Web.ApiGateway.csproj", "{93DA7D68-68D2-4E63-BEB0-A8BF0398BABD}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABDEDE24-098D-46B9-BF7B-0E92174B6B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDEDE24-098D-46B9-BF7B-0E92174B6B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDEDE24-098D-46B9-BF7B-0E92174B6B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDEDE24-098D-46B9-BF7B-0E92174B6B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93DA7D68-68D2-4E63-BEB0-A8BF0398BABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DA7D68-68D2-4E63-BEB0-A8BF0398BABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DA7D68-68D2-4E63-BEB0-A8BF0398BABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DA7D68-68D2-4E63-BEB0-A8BF0398BABD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -24,5 +46,9 @@ Global
 		{07184B78-12C8-4AF1-9286-14F0B8931FFB} = {CA213868-A632-49B1-BC84-2A92AAAE9709}
 		{2FAF3855-BFE2-4011-A08A-9BF6A208D0CB} = {CA213868-A632-49B1-BC84-2A92AAAE9709}
 		{A1789CBE-8F81-4570-BAB5-75A1AEDB2305} = {CA213868-A632-49B1-BC84-2A92AAAE9709}
+		{EFEFB91E-825B-4BDA-B4D5-C1B709D6447C} = {A1789CBE-8F81-4570-BAB5-75A1AEDB2305}
+		{BC7AE62A-8397-4EE1-90AE-011070FCB251} = {A1789CBE-8F81-4570-BAB5-75A1AEDB2305}
+		{ABDEDE24-098D-46B9-BF7B-0E92174B6B8D} = {EFEFB91E-825B-4BDA-B4D5-C1B709D6447C}
+		{93DA7D68-68D2-4E63-BEB0-A8BF0398BABD} = {BC7AE62A-8397-4EE1-90AE-011070FCB251}
 	EndGlobalSection
 EndGlobal
