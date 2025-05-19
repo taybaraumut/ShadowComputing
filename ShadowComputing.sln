@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B2E7CBEF-E0DF-468A-AAA1-E51A815AF284}"
 EndProject
@@ -15,7 +15,61 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{2FAF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{A1789CBE-8F81-4570-BAB5-75A1AEDB2305}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppointmentService", "AppointmentService", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{97EFED42-4DE4-4012-9DCD-1FF672589119}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{30B597F4-DEF8-4586-AA14-24205E5D191D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B08FCCEB-D690-41D8-8FF2-905219FECFD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{AF38625A-2367-414C-803E-B0D0316998A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{EBC8AC5A-78BA-4C13-80F8-1C49F625630B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.Application", "src\Services\AppointmentService\Modules\Layers\Core\ShadowComputing.Appointment.Application\ShadowComputing.Appointment.Application.csproj", "{DF789603-7DF9-4D1E-B5FE-A61EA31C54A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.Domain", "src\Services\AppointmentService\Modules\Layers\Core\ShadowComputing.Appointment.Domain\ShadowComputing.Appointment.Domain.csproj", "{8255B919-CE50-4717-8798-8641414F12B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.Infrastructure", "src\Services\AppointmentService\Modules\Layers\External\ShadowComputing.Appointment.Infrastructure\ShadowComputing.Appointment.Infrastructure.csproj", "{DE6773B6-B8F8-4661-9E37-8B95AFBE7218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.Persistence", "src\Services\AppointmentService\Modules\Layers\External\ShadowComputing.Appointment.Persistence\ShadowComputing.Appointment.Persistence.csproj", "{10F2E05A-2FC5-407E-8C92-62AC492D89A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.Presentation", "src\Services\AppointmentService\Modules\Layers\External\ShadowComputing.Appointment.Presentation\ShadowComputing.Appointment.Presentation.csproj", "{DFE54B1A-A95B-4415-A72B-20A033000F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.gRPC", "src\Services\AppointmentService\Modules\Layers\ShadowComputing.Appointment.gRPC\ShadowComputing.Appointment.gRPC.csproj", "{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF789603-7DF9-4D1E-B5FE-A61EA31C54A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF789603-7DF9-4D1E-B5FE-A61EA31C54A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF789603-7DF9-4D1E-B5FE-A61EA31C54A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF789603-7DF9-4D1E-B5FE-A61EA31C54A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8255B919-CE50-4717-8798-8641414F12B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8255B919-CE50-4717-8798-8641414F12B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8255B919-CE50-4717-8798-8641414F12B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8255B919-CE50-4717-8798-8641414F12B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6773B6-B8F8-4661-9E37-8B95AFBE7218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6773B6-B8F8-4661-9E37-8B95AFBE7218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6773B6-B8F8-4661-9E37-8B95AFBE7218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6773B6-B8F8-4661-9E37-8B95AFBE7218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F2E05A-2FC5-407E-8C92-62AC492D89A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F2E05A-2FC5-407E-8C92-62AC492D89A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F2E05A-2FC5-407E-8C92-62AC492D89A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F2E05A-2FC5-407E-8C92-62AC492D89A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE54B1A-A95B-4415-A72B-20A033000F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE54B1A-A95B-4415-A72B-20A033000F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE54B1A-A95B-4415-A72B-20A033000F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE54B1A-A95B-4415-A72B-20A033000F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -24,5 +78,20 @@ Global
 		{07184B78-12C8-4AF1-9286-14F0B8931FFB} = {CA213868-A632-49B1-BC84-2A92AAAE9709}
 		{2FAF3855-BFE2-4011-A08A-9BF6A208D0CB} = {CA213868-A632-49B1-BC84-2A92AAAE9709}
 		{A1789CBE-8F81-4570-BAB5-75A1AEDB2305} = {CA213868-A632-49B1-BC84-2A92AAAE9709}
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {07184B78-12C8-4AF1-9286-14F0B8931FFB}
+		{97EFED42-4DE4-4012-9DCD-1FF672589119} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{30B597F4-DEF8-4586-AA14-24205E5D191D} = {97EFED42-4DE4-4012-9DCD-1FF672589119}
+		{B08FCCEB-D690-41D8-8FF2-905219FECFD6} = {97EFED42-4DE4-4012-9DCD-1FF672589119}
+		{AF38625A-2367-414C-803E-B0D0316998A7} = {30B597F4-DEF8-4586-AA14-24205E5D191D}
+		{EBC8AC5A-78BA-4C13-80F8-1C49F625630B} = {30B597F4-DEF8-4586-AA14-24205E5D191D}
+		{DF789603-7DF9-4D1E-B5FE-A61EA31C54A5} = {AF38625A-2367-414C-803E-B0D0316998A7}
+		{8255B919-CE50-4717-8798-8641414F12B7} = {AF38625A-2367-414C-803E-B0D0316998A7}
+		{DE6773B6-B8F8-4661-9E37-8B95AFBE7218} = {EBC8AC5A-78BA-4C13-80F8-1C49F625630B}
+		{10F2E05A-2FC5-407E-8C92-62AC492D89A9} = {EBC8AC5A-78BA-4C13-80F8-1C49F625630B}
+		{DFE54B1A-A95B-4415-A72B-20A033000F20} = {EBC8AC5A-78BA-4C13-80F8-1C49F625630B}
+		{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265} = {30B597F4-DEF8-4586-AA14-24205E5D191D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {563C3702-1E0F-4965-ACC8-04F82CEA8CBC}
 	EndGlobalSection
 EndGlobal
