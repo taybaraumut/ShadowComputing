@@ -39,6 +39,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.gRPC", "src\Services\AppointmentService\Modules\Layers\ShadowComputing.Appointment.gRPC\ShadowComputing.Appointment.gRPC.csproj", "{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{DB2C9484-5DD6-41FE-9245-10560FA268A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{68AED773-3CDB-4E52-8450-1D9D704000DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{70395F55-B2ED-4DAE-84AE-87AC0F311180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.Benchmark", "src\Services\AppointmentService\Modules\Tests\Benchmark\ShadowComputing.Appointment.Benchmark\ShadowComputing.Appointment.Benchmark.csproj", "{19EE2D4A-BC2E-4181-A2D0-1F05CDD18C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.Integration", "src\Services\AppointmentService\Modules\Tests\Integration\ShadowComputing.Appointment.Integration\ShadowComputing.Appointment.Integration.csproj", "{CACBF1DA-2075-490E-879C-3DA591686650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Appointment.Unit", "src\Services\AppointmentService\Modules\Tests\Unit\ShadowComputing.Appointment.Unit\ShadowComputing.Appointment.Unit.csproj", "{5390FE83-A5DD-4202-A4D0-6F27332E07A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +81,18 @@ Global
 		{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19EE2D4A-BC2E-4181-A2D0-1F05CDD18C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EE2D4A-BC2E-4181-A2D0-1F05CDD18C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EE2D4A-BC2E-4181-A2D0-1F05CDD18C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EE2D4A-BC2E-4181-A2D0-1F05CDD18C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACBF1DA-2075-490E-879C-3DA591686650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACBF1DA-2075-490E-879C-3DA591686650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACBF1DA-2075-490E-879C-3DA591686650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACBF1DA-2075-490E-879C-3DA591686650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5390FE83-A5DD-4202-A4D0-6F27332E07A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5390FE83-A5DD-4202-A4D0-6F27332E07A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5390FE83-A5DD-4202-A4D0-6F27332E07A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5390FE83-A5DD-4202-A4D0-6F27332E07A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +114,12 @@ Global
 		{10F2E05A-2FC5-407E-8C92-62AC492D89A9} = {EBC8AC5A-78BA-4C13-80F8-1C49F625630B}
 		{DFE54B1A-A95B-4415-A72B-20A033000F20} = {EBC8AC5A-78BA-4C13-80F8-1C49F625630B}
 		{A25D7EFE-24EC-429D-AEE3-E4A0A61EA265} = {30B597F4-DEF8-4586-AA14-24205E5D191D}
+		{DB2C9484-5DD6-41FE-9245-10560FA268A0} = {B08FCCEB-D690-41D8-8FF2-905219FECFD6}
+		{68AED773-3CDB-4E52-8450-1D9D704000DF} = {B08FCCEB-D690-41D8-8FF2-905219FECFD6}
+		{70395F55-B2ED-4DAE-84AE-87AC0F311180} = {B08FCCEB-D690-41D8-8FF2-905219FECFD6}
+		{19EE2D4A-BC2E-4181-A2D0-1F05CDD18C4E} = {DB2C9484-5DD6-41FE-9245-10560FA268A0}
+		{CACBF1DA-2075-490E-879C-3DA591686650} = {68AED773-3CDB-4E52-8450-1D9D704000DF}
+		{5390FE83-A5DD-4202-A4D0-6F27332E07A0} = {70395F55-B2ED-4DAE-84AE-87AC0F311180}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {563C3702-1E0F-4965-ACC8-04F82CEA8CBC}
