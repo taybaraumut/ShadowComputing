@@ -23,6 +23,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{F8F0EF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Basket.API", "src\Services\BasketService\Modules\Layers\ShadowComputing.Basket.API\ShadowComputing.Basket.API.csproj", "{786FB5CB-F551-4484-8169-8B1757614611}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FF9E3E54-E389-4DD4-AE44-42D469B92ECC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{EDAB5715-122B-4EC1-AB56-B0C2A29795AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{6790533A-F2FE-4423-96DD-1A3246D2B832}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{6320317F-DB69-4C73-9A74-DB01EB637372}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Basket.Benchmark", "src\Services\BasketService\Modules\Tests\Benchmark\ShadowComputing.Basket.Benchmark\ShadowComputing.Basket.Benchmark.csproj", "{EFC8174F-F1DB-4C76-8E9C-1ABBEE203D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Basket.Integration", "src\Services\BasketService\Modules\Tests\Integration\ShadowComputing.Basket.Integration\ShadowComputing.Basket.Integration.csproj", "{7D914987-28E9-40BC-B592-49810F1D13CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Basket.Unit", "src\Services\BasketService\Modules\Tests\Unit\ShadowComputing.Basket.Unit\ShadowComputing.Basket.Unit.csproj", "{CCFCE708-07E4-4F22-B744-BC2F054DE665}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +47,18 @@ Global
 		{786FB5CB-F551-4484-8169-8B1757614611}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{786FB5CB-F551-4484-8169-8B1757614611}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{786FB5CB-F551-4484-8169-8B1757614611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC8174F-F1DB-4C76-8E9C-1ABBEE203D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC8174F-F1DB-4C76-8E9C-1ABBEE203D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC8174F-F1DB-4C76-8E9C-1ABBEE203D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC8174F-F1DB-4C76-8E9C-1ABBEE203D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D914987-28E9-40BC-B592-49810F1D13CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D914987-28E9-40BC-B592-49810F1D13CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D914987-28E9-40BC-B592-49810F1D13CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D914987-28E9-40BC-B592-49810F1D13CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFCE708-07E4-4F22-B744-BC2F054DE665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFCE708-07E4-4F22-B744-BC2F054DE665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFCE708-07E4-4F22-B744-BC2F054DE665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFCE708-07E4-4F22-B744-BC2F054DE665}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +72,15 @@ Global
 		{F1CC483F-D74A-464C-9F73-E07091220F05} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{F8F0EFC3-3D0F-4681-9582-F7383EEE4CA6} = {F1CC483F-D74A-464C-9F73-E07091220F05}
 		{786FB5CB-F551-4484-8169-8B1757614611} = {F8F0EFC3-3D0F-4681-9582-F7383EEE4CA6}
+		{FF9E3E54-E389-4DD4-AE44-42D469B92ECC} = {F1CC483F-D74A-464C-9F73-E07091220F05}
+		{EDAB5715-122B-4EC1-AB56-B0C2A29795AC} = {FF9E3E54-E389-4DD4-AE44-42D469B92ECC}
+		{6790533A-F2FE-4423-96DD-1A3246D2B832} = {FF9E3E54-E389-4DD4-AE44-42D469B92ECC}
+		{6320317F-DB69-4C73-9A74-DB01EB637372} = {FF9E3E54-E389-4DD4-AE44-42D469B92ECC}
+		{EFC8174F-F1DB-4C76-8E9C-1ABBEE203D8D} = {EDAB5715-122B-4EC1-AB56-B0C2A29795AC}
+		{7D914987-28E9-40BC-B592-49810F1D13CA} = {6320317F-DB69-4C73-9A74-DB01EB637372}
+		{CCFCE708-07E4-4F22-B744-BC2F054DE665} = {6790533A-F2FE-4423-96DD-1A3246D2B832}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DEB6E1C-2BA1-4ECE-AA2E-81C6FE85D070}
 	EndGlobalSection
 EndGlobal
