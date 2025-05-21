@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B2E7CBEF-E0DF-468A-AAA1-E51A815AF284}"
 EndProject
@@ -15,7 +15,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{2FAF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{A1789CBE-8F81-4570-BAB5-75A1AEDB2305}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasketService", "BasketService", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{F1CC483F-D74A-464C-9F73-E07091220F05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layers", "Layers", "{F8F0EFC3-3D0F-4681-9582-F7383EEE4CA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Basket.API", "src\Services\BasketService\Modules\Layers\ShadowComputing.Basket.API\ShadowComputing.Basket.API.csproj", "{786FB5CB-F551-4484-8169-8B1757614611}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{786FB5CB-F551-4484-8169-8B1757614611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786FB5CB-F551-4484-8169-8B1757614611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786FB5CB-F551-4484-8169-8B1757614611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786FB5CB-F551-4484-8169-8B1757614611}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -24,5 +42,9 @@ Global
 		{07184B78-12C8-4AF1-9286-14F0B8931FFB} = {CA213868-A632-49B1-BC84-2A92AAAE9709}
 		{2FAF3855-BFE2-4011-A08A-9BF6A208D0CB} = {CA213868-A632-49B1-BC84-2A92AAAE9709}
 		{A1789CBE-8F81-4570-BAB5-75A1AEDB2305} = {CA213868-A632-49B1-BC84-2A92AAAE9709}
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {07184B78-12C8-4AF1-9286-14F0B8931FFB}
+		{F1CC483F-D74A-464C-9F73-E07091220F05} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F8F0EFC3-3D0F-4681-9582-F7383EEE4CA6} = {F1CC483F-D74A-464C-9F73-E07091220F05}
+		{786FB5CB-F551-4484-8169-8B1757614611} = {F8F0EFC3-3D0F-4681-9582-F7383EEE4CA6}
 	EndGlobalSection
 EndGlobal
