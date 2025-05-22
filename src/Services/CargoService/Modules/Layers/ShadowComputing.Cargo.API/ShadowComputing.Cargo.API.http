@@ -1,0 +1,6 @@
+@ShadowComputing.Cargo.API_HostAddress = http://localhost:5147
+
+GET {{ShadowComputing.Cargo.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
