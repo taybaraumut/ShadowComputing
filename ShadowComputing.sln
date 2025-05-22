@@ -29,6 +29,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Payment.Inf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Payment.gRPC", "src\Services\PaymentService\Modules\Layers\ShadowComputing.Payment.gRPC\ShadowComputing.Payment.gRPC.csproj", "{848AA976-7ECF-43F9-8CA3-ED1F12BDA8C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7D23729C-AD27-4B6E-8121-E9939F3E65AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{ED783E53-335F-4B7D-BB6E-F117D4BDBA91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{93BA932B-0B8A-4654-96FC-8E99E4096E14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{A45C9334-517A-4E2A-9D3F-A66063531B39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Payment.Benchmark", "src\Services\PaymentService\Modules\Tests\Benchmark\ShadowComputing.Payment.Benchmark\ShadowComputing.Payment.Benchmark.csproj", "{3BEACAAC-F51B-46F4-906A-A0FD40387858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Payment.Integration", "src\Services\PaymentService\Modules\Tests\Integration\ShadowComputing.Payment.Integration\ShadowComputing.Payment.Integration.csproj", "{CCBFB412-5625-4C2A-B54B-8386B37995DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShadowComputing.Payment.Unit", "src\Services\PaymentService\Modules\Tests\Unit\ShadowComputing.Payment.Unit\ShadowComputing.Payment.Unit.csproj", "{02A08566-D645-44DF-8F54-FE24F175B2AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +65,18 @@ Global
 		{848AA976-7ECF-43F9-8CA3-ED1F12BDA8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{848AA976-7ECF-43F9-8CA3-ED1F12BDA8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{848AA976-7ECF-43F9-8CA3-ED1F12BDA8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BEACAAC-F51B-46F4-906A-A0FD40387858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEACAAC-F51B-46F4-906A-A0FD40387858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEACAAC-F51B-46F4-906A-A0FD40387858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEACAAC-F51B-46F4-906A-A0FD40387858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBFB412-5625-4C2A-B54B-8386B37995DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBFB412-5625-4C2A-B54B-8386B37995DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBFB412-5625-4C2A-B54B-8386B37995DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBFB412-5625-4C2A-B54B-8386B37995DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A08566-D645-44DF-8F54-FE24F175B2AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A08566-D645-44DF-8F54-FE24F175B2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A08566-D645-44DF-8F54-FE24F175B2AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A08566-D645-44DF-8F54-FE24F175B2AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +93,13 @@ Global
 		{18FFA281-F369-413B-90F9-E9EB000053CA} = {3E6494D3-21C8-4A25-997C-701FDB3562CA}
 		{16AA0F23-0756-457C-8114-B813F12CB364} = {3E6494D3-21C8-4A25-997C-701FDB3562CA}
 		{848AA976-7ECF-43F9-8CA3-ED1F12BDA8C3} = {3E6494D3-21C8-4A25-997C-701FDB3562CA}
+		{7D23729C-AD27-4B6E-8121-E9939F3E65AA} = {CBB6D9FF-3AB6-4B7F-8484-FD8A7E00D59A}
+		{ED783E53-335F-4B7D-BB6E-F117D4BDBA91} = {7D23729C-AD27-4B6E-8121-E9939F3E65AA}
+		{93BA932B-0B8A-4654-96FC-8E99E4096E14} = {7D23729C-AD27-4B6E-8121-E9939F3E65AA}
+		{A45C9334-517A-4E2A-9D3F-A66063531B39} = {7D23729C-AD27-4B6E-8121-E9939F3E65AA}
+		{3BEACAAC-F51B-46F4-906A-A0FD40387858} = {ED783E53-335F-4B7D-BB6E-F117D4BDBA91}
+		{CCBFB412-5625-4C2A-B54B-8386B37995DE} = {A45C9334-517A-4E2A-9D3F-A66063531B39}
+		{02A08566-D645-44DF-8F54-FE24F175B2AC} = {93BA932B-0B8A-4654-96FC-8E99E4096E14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3A7A7B0-1F6F-4EDD-A9D6-D612390BB535}
