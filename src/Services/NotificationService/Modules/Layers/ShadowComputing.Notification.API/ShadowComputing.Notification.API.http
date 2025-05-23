@@ -1,0 +1,6 @@
+@ShadowComputing.Notification.API_HostAddress = http://localhost:5264
+
+GET {{ShadowComputing.Notification.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
